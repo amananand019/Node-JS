@@ -1,12 +1,9 @@
-// modules 
+//CommonJS, every file is module (by default)
+// modules - Encapsulated Code (only share minimum)
+const names = require('./4-names')
+const sayHi = require('./5-utils')
 
-const john = 'john'
-const peter = 'peter'
-
-const sayHi= (name) => {
-    console.log(`Hello there ${name}`);
-}
-
+console.log(names);
 sayHi('aman')
-sayHi(john)
-sayHi(peter)
+sayHi(names.john)
+sayHi(names.peter)
